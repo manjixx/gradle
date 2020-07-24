@@ -1,2 +1,20 @@
 apply plugin: 'java'
 apply plugin: 'groovy'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
+    }
+}
+
+// 仓库
+repositories {
+    mavenCentral()
+}
+// 依赖
+dependencies {
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
+}
